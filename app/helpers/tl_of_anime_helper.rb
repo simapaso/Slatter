@@ -1,0 +1,2 @@
+module TlOfAnimeHelper
+end

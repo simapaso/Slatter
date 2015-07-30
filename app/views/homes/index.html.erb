@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Home of *サービスの名前</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="home.css" type="text/css">
+  </head>
+
+  <body>
+    
+    <div id="header">
+      <div id="headerbar">
+        <div id="titlerogo">
+          Tweeter
+        </div>
+        <div id="headerbar_link">
+          ＨＯＭＥ　Ｔｌ　Ｅｄｉｔ
+        </div>
+      </div>
+      <div>
+        
+      </div>
+      <div id="profile">
+        <div id="profile_image">
+          <%= image_tag("home/main_bgi01.jpg") %>
+        </div>
+       　<div id="profile_username">
+          username
+        </div> 
+        <div id="profile_link">
+          Login　Logout
+        </div> 
+        <div id="profile_text">
+          text
+        </div>
+      </div>  
+    </div>
+    <div id="main">
+      <div id="sidebar">
+        <ul>
+          <li>Hitokoto</li>
+          <li>Anime</li>
+          <li>Movie</li>
+          <li>Comic</li>
+        </ul>
+      </div>
+      <div id="tlbar">
+        <%= render 'shared/base_tlbar' %>  
+      </div>
+    </div>
+    <div id="footer">footer</div>
+  
+  </body>
+
+</html>

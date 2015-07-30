@@ -1,0 +1,118 @@
+*{
+    margin: 0 auto;
+}
+
+ul{
+  
+}
+
+html{
+  height:100%;
+  width :100%;
+}
+
+
+body{
+  background-color: darkblue;
+  height: 100%;
+  width : 100%;
+}
+
+
+#header{
+  width : 100%;
+  height: 50%;
+  overflow: hidden;
+}
+
+  #headerbar{
+    background-color: white;
+    font-size :130%;
+    padding   : 5px;
+    color : blue;
+    width : 100%;
+    height: 7%;
+  }
+
+    #titlerogo{
+      text-align: center;
+      width: 10%;
+      float: center;
+    }
+
+    #headerbar_link{
+      text-align: center;
+      margin-top: -25px;
+      width: 30%;
+      float: right;
+    }
+
+  #profile{
+    background-color: blue;
+    font-size :130%;
+    width  : 80%;
+    height : 100%;
+  }
+
+    #profile_image{
+      margin: 2%;
+      width : auto;
+      height: auto;
+      float : left;
+    }
+
+    #profile_username{
+      background-color: white;
+      margin-top: 5%;
+      width : 15%;
+      height: 10%; 
+      float : left;
+    }
+
+    #profile_link{
+      background-color: yellow;
+      margin-top: 2%;
+      width : 13%;
+      height: 10%;
+      float : right;
+    }
+
+    #profile_text{
+      background-color: white;
+      margin-top: 7%;
+      margin-left: 25%;
+      width : 70%;
+      height: 55%; 
+
+    }
+
+#main{
+  background-image: url(home/main_bgi01.jpg);
+  margin: 5px 0px;
+  height: 100%;
+}
+
+#sidebar{
+  background-color: yellow;
+  height: 100%;
+  width : 10%;
+  float : left;
+}
+
+#tlbar{
+  background-color: white;
+  float: center;
+  width : 50%;
+  height: 100%;
+}
+
+#footer{
+  background-color: yellow;
+  height: 10%;
+}
+
+/*
+index  :データのリスト
+new    :データの作成
+show(?):データの詳細
+*/
