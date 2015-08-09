@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  
+  get 'login_pages/new'
+
+  get 'login_pages/login'
+
+  get 'login_pages/logout'
+
   get 'tl_of_anime/new'
 
   get 'tl_of_anime/show'
@@ -17,23 +24,20 @@ Rails.application.routes.draw do
 
   get 'tl_of_music/index'
 
-
   get 'homes/new'
 
-  get 'homes/index'
+  get 'homes/index/:name' => "homes#index"
 
   get 'homes/show'
 
   get 'homes/setting'
-
-
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-    root 'homes#index'
+    root 'login_pages#login'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

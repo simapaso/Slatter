@@ -1,41 +1,51 @@
-<!DOCTYPE html>
-<html>
 
   <head>
     <title>Home of *サービスの名前</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="home.css" type="text/css">
   </head>
 
   <body>
+  <%= stylesheet_link_tag "home/home", :media => "all" %>
     
     <div id="header">
       <div id="headerbar">
         <div id="titlerogo">
-          Tweeter
+          Slater
         </div>
         <div id="headerbar_link">
-          ＨＯＭＥ　Ｔｌ　Ｅｄｉｔ
+          ＨＯＭＥ　Ｔｌ
         </div>
       </div>
-      <div>
-        
-      </div>
+  
       <div id="profile">
-        <div id="profile_image">
-          <%= image_tag("home/main_bgi01.jpg") %>
+        <div id="profile_left">
+          <div id="profile_image">
+            <%= image_tag("home/main_bgi01.jpg") %>
+          </div>
+       　  <div id="profile_username">
+            <%= @user[:name] %>
+          </div>
+          <div id="profile_info">
+            friend:<%= @user[:friendNum] %><br>
+            friended:<%= @user[:friendedNum] %><br>
+            experience:10ex<br>
+          </div>
+          <div id="profile_edit">
+            edit
+          </div>
         </div>
-       　<div id="profile_username">
-          username
-        </div> 
+        
         <div id="profile_link">
-          Login　Logout
-        </div> 
+          <%= link_to "Login", :controller => "login_pages", :action => "login" %>　Logout
+        </div>
         <div id="profile_text">
-          text
+          man　or　woman:<br>
+          old:<br>
+          introduction　text:<br>
+          <%= @user[:introduceText] %>
         </div>
       </div>  
     </div>
+
     <div id="main">
       <div id="sidebar">
         <ul>
@@ -53,4 +63,3 @@
   
   </body>
 
-</html>

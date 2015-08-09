@@ -2,14 +2,14 @@
 
 one:
   name: MyString
-  img: MyString
-  friendNum: MyString
-  friendedNum: MyString
-  introduceText: MyString
+  img: 
+  friendNum: 1
+  friendedNum: 1
+  introduceText: MyText
 
 two:
   name: MyString
-  img: MyString
-  friendNum: MyString
-  friendedNum: MyString
-  introduceText: MyString
+  img: 
+  friendNum: 1
+  friendedNum: 1
+  introduceText: MyText

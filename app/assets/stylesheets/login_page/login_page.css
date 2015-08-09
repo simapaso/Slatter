@@ -1,0 +1,63 @@
+body{
+  background-color: blue;
+}
+
+#main{
+  background-color: red;
+  margin-left : auto;
+  margin-right: auto;
+  margin-top  : 2%;
+  overflow: hidden;
+  width : 80%;
+  height: 90%;
+}
+
+#rogo{
+  background-color: white; 
+  margin    : 3% auto 0% auto;
+  text-align: center;
+  font-size : 1500%; 
+  width : 65%;
+  height: 45%;
+  float : center;
+  color : orange;
+}
+
+#login_area{
+  background-color: blue;
+  margin : 2% auto 0% auto;
+  padding: 1%; 
+  font-size: 150%;
+  width : 45%;
+  height: 30%;
+}
+
+#login_form{
+  background-color: yellow;
+}
+
+#login_input{
+  background-color: red;
+  text-align: center;
+  padding: 1%;
+  color  : green;
+  width  : 90%;
+  height : 20%;
+}
+
+#login_button{
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 1% auto 0 auto;
+  color : white;
+  width : 90%;
+  height: 5%; 
+}
+
+#login_new{
+  
+}
+
+ul{
+  list-style-type: none;
+}

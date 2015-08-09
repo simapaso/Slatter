@@ -5,3 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+@user = User.new
+@user[:name] = "none"
+@user[:img]  = nil
+@user[:friendNum] = 0
+@user[:friendedNum] = 0
+@user[:introduceText] = "none's introduce text"
+@user.save
