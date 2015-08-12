@@ -1,2 +1,0 @@
-module TlOfComicHelper
-end

@@ -1,0 +1,19 @@
+<%= stylesheet_link_tag 'login_page/login_create' %>
+
+<body>
+  <div id="header">header</div>
+  <div id="main">
+    <div id="form_head"><span class="rogo">Slatter</span>へようこそ</div>
+    <div id="form_area">
+      <%= form_for @user do |form| %>
+      <ul>
+        <li>ユーザー名:<%= form.text_field :name, size: 16 %></li>
+        <li>メールアドレス:</li>
+        <li>パスワード:</li>
+        <li>確認パスワード:</li>
+      </ul>
+      Create
+      <% end %>
+    </div>
+  </div>
+</body>

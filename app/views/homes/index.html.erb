@@ -12,7 +12,7 @@
           Slater
         </div>
         <div id="headerbar_link">
-          ＨＯＭＥ　Ｔｌ
+          ＨＯＭＥ　<%= link_to 'Ｔｌ', '/tls/index' %>
         </div>
       </div>
   
@@ -35,31 +35,32 @@
         </div>
         
         <div id="profile_link">
-          <%= link_to "Login", :controller => "login_pages", :action => "login" %>　Logout
+          <%= link_to "Login", '/login_pages/login' %>　Logout
         </div>
         <div id="profile_text">
-          man　or　woman:<br>
-          old:<br>
-          introduction　text:<br>
           <%= @user[:introduceText] %>
         </div>
       </div>  
     </div>
 
     <div id="main">
+      <div id="selectbar">
+        お気に入り　pickUp　足跡
+      </div>
       <div id="sidebar">
         <ul>
-          <li>Hitokoto</li>
+          <li>ひところ</li>
           <li>Anime</li>
           <li>Movie</li>
           <li>Comic</li>
         </ul>
       </div>
       <div id="tlbar">
-        <%= render 'shared/base_tlbar' %>  
+        <% if params[:page_type] == 0 then %>
+          <%= render @page_type1 %>
+        <% end %>
       </div>
     </div>
     <div id="footer">footer</div>
   
   </body>
-

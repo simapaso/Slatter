@@ -1,7 +1,6 @@
 class HomesController < ApplicationController
 
   def newUser
-
   end
 
   def new
@@ -9,6 +8,7 @@ class HomesController < ApplicationController
 
   def index
     @user = User.find_by(name: params[:name])
+      @page_type1 = 'shared/base_tlbar'
   end
 
   def show

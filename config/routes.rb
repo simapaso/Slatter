@@ -1,10 +1,18 @@
 Rails.application.routes.draw do
   
-  get 'login_pages/new'
+  get 'tls/new'
 
-  get 'login_pages/login'
+  get 'tls/show'
 
-  get 'login_pages/logout'
+  get 'tls/index'
+
+  get 'tls/crete'
+
+  get 'tl_of_comic/new'
+
+  get 'tl_of_comic/show'
+
+  get 'tl_of_comic/index'
 
   get 'tl_of_anime/new'
 
@@ -18,15 +26,19 @@ Rails.application.routes.draw do
 
   get 'tl_of_comic/index'
 
-  get 'tl_of_music/new'
+  get 'login_pages/new'
 
-  get 'tl_of_music/show'
+  get 'login_pages/index'
 
-  get 'tl_of_music/index'
+  get 'login_pages/login'
+
+  get 'login_pages/logout'
+
+  get 'login_pages/create'
 
   get 'homes/new'
 
-  get 'homes/index/:name' => "homes#index"
+  get 'myhome/:name/:page_type' => "homes#index"
 
   get 'homes/show'
 

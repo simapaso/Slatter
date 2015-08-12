@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class TlControllerTest < ActionController::TestCase
+class TlsControllerTest < ActionController::TestCase
   test "should get new" do
     get :new
     assert_response :success
@@ -13,6 +13,11 @@ class TlControllerTest < ActionController::TestCase
 
   test "should get index" do
     get :index
+    assert_response :success
+  end
+
+  test "should get crete" do
+    get :crete
     assert_response :success
   end
 

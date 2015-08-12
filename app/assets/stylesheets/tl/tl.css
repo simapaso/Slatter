@@ -23,14 +23,8 @@ body{
 }
 
 #main{
-  background-color: blue;
+  background-color: orange;
   height: 150%;
-}
-
-#main_head{
-  background-color: green;
-  height: 30%;
-  width : 100%; 
 }
 
 #main_sidebar{

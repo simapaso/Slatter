@@ -6,16 +6,17 @@
     <div id="rogo">
       Slatter
     </div>
+    <div id="login_error"><p class="login_error_p">ユーザーネームかパスワードが違います</p></div>
   	<div id="login_area">
   	  <div id="login_form">
   	    <div id="login_input">
-          Name: <br>
+          UserName: <br>
           *ここにテキストフィールド<br>
           Password:<br>
           *ここにテキストフィールド<br>
           <div id="login_button">Login</div>
           <div id="login_new">
-            <%= link_to 'new user?', '/login_pages/new' %>
+            <%= link_to 'new user?', '/login_pages/create' %>
           </div>
         </div>
 	  </div>
