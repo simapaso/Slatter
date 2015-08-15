@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :users do
+    collection{ get "login", "logout" }
+  end
   
   get 'tls/new'
 
@@ -7,34 +10,6 @@ Rails.application.routes.draw do
   get 'tls/index'
 
   get 'tls/crete'
-
-  get 'tl_of_comic/new'
-
-  get 'tl_of_comic/show'
-
-  get 'tl_of_comic/index'
-
-  get 'tl_of_anime/new'
-
-  get 'tl_of_anime/show'
-
-  get 'tl_of_anime/index'
-
-  get 'tl_of_comic/new'
-
-  get 'tl_of_comic/show'
-
-  get 'tl_of_comic/index'
-
-  get 'login_pages/new'
-
-  get 'login_pages/index'
-
-  get 'login_pages/login'
-
-  get 'login_pages/logout'
-
-  get 'login_pages/create'
 
   get 'homes/new'
 
@@ -49,7 +24,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-    root 'login_pages#login'
+    root 'users#login'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

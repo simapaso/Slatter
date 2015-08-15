@@ -1,4 +1,4 @@
-  <%= stylesheet_link_tag "login_page/login_page", :media => "all" %>
+  <%= stylesheet_link_tag "user/login", :media => "all" %>
 <body>
 
   <div id="main">
@@ -10,13 +10,15 @@
   	<div id="login_area">
   	  <div id="login_form">
   	    <div id="login_input">
+          <%= form_for :user, url: '/login' do |f| %>
           UserName: <br>
-          *ここにテキストフィールド<br>
+          <%= f.text_field :name, :class => 'form_text_field',:maxlength => '16'  %><br>
           Password:<br>
-          *ここにテキストフィールド<br>
-          <div id="login_button">Login</div>
+          <%= f.password_field :password, :class => 'form_text_field',:maxlength => '16' %><br>
+          <div id="login_button"><%= f.submit 'ログイン' %></div>
+          <% end %>
           <div id="login_new">
-            <%= link_to 'new user?', '/login_pages/create' %>
+            <%= link_to 'new user?', new_user_path %>
           </div>
         </div>
 	  </div>

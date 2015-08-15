@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
 #
@@ -7,9 +8,9 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 @user = User.new
-@user[:name] = "none"
+@user[:name] = "noneName"
 @user[:img]  = nil
-@user[:friendNum] = 0
+@user[:friendNum] = 1
 @user[:friendedNum] = 0
 @user[:introduceText] = "none's introduce text"
 @user.save
