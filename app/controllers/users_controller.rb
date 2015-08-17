@@ -1,30 +1,31 @@
 class UsersController < ApplicationController
-end
+  def index
+  end
 
-def index
-end
+  def show
+  end
 
-def show
-end
+  def new
+  	@user = User.new
+  	@t = 'test'
+  end
 
-def new
-  @user = User.new
-end
+  def create
+  	@t = params[:name]
+  end
 
-def criate
-end
+  def edit
+  end
 
-def edit
-end
+  def update
+  end
 
-def update
-end
+  def destroy
+  end
 
-def destroy
-end
+  def login
+  end
 
-def login
-end
-
-def logout
+  def logout
+  end
 end

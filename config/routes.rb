@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
+
   resources :users do
     collection{ get "login", "logout" }
   end
-  
+
+  get 'users/index'
+
   get 'tls/new'
 
   get 'tls/show'
@@ -11,11 +14,11 @@ Rails.application.routes.draw do
 
   get 'tls/crete'
 
-  get 'homes/new'
-
   get 'myhome/:name/:page_type' => "homes#index"
 
   get 'homes/show'
+
+  get 'homes/new'
 
   get 'homes/setting'
 
