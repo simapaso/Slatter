@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  mail_addless: MyString
+  img: 
+  follow_num: 1
+  follower_num: 1
+  myText: MyText
+  myTlId: 1
+  myFavTlId: 1
+  myAsiatoTlId: 1
+
+two:
+  name: MyString
+  mail_addless: MyString
+  img: 
+  follow_num: 1
+  follower_num: 1
+  myText: MyText
+  myTlId: 1
+  myFavTlId: 1
+  myAsiatoTlId: 1
