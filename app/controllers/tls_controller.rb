@@ -1,4 +1,5 @@
 class TlsController < ApplicationController
+<<<<<<< HEAD
 
 def new
 end
@@ -18,4 +19,17 @@ end
 def destroy
 end
 
+=======
+  def new
+  end
+
+  def show
+  end
+
+  def index
+  end
+
+  def crete
+  end
+>>>>>>> 34884a3685569ee62069abef8170ffa2cc302b40
 end

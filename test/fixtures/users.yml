@@ -2,6 +2,7 @@
 
 one:
   name: MyString
+<<<<<<< HEAD
   mail_addless: MyString
   img: 
   follow_num: 1
@@ -21,3 +22,16 @@ two:
   myTlId: 1
   myFavTlId: 1
   myAsiatoTlId: 1
+=======
+  img: 
+  friendNum: 1
+  friendedNum: 1
+  introduceText: MyText
+
+two:
+  name: MyString
+  img: 
+  friendNum: 1
+  friendedNum: 1
+  introduceText: MyText
+>>>>>>> 34884a3685569ee62069abef8170ffa2cc302b40

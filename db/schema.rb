@@ -11,6 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20150819120224) do
 
   create_table "users", force: :cascade do |t|
@@ -25,6 +26,19 @@ ActiveRecord::Schema.define(version: 20150819120224) do
     t.integer  "myAsiatoTlId", limit: 4
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
+=======
+ActiveRecord::Schema.define(version: 20150808063420) do
+
+  create_table "users", force: :cascade do |t|
+    t.string   "name"
+    t.binary   "img"
+    t.integer  "friendNum"
+    t.integer  "friendedNum"
+    t.text     "introduceText"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.string   "password"
+>>>>>>> 34884a3685569ee62069abef8170ffa2cc302b40
   end
 
 end

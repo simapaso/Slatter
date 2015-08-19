@@ -1,5 +1,9 @@
 class UsersController < ApplicationController
+<<<<<<< HEAD
 def index
+=======
+  def index
+>>>>>>> 34884a3685569ee62069abef8170ffa2cc302b40
   end
 
   def show
@@ -11,7 +15,11 @@ def index
   end
 
   def create
+<<<<<<< HEAD
   	@t = params[:@user][:name]
+=======
+  	@t = params[:name]
+>>>>>>> 34884a3685569ee62069abef8170ffa2cc302b40
   end
 
   def edit
@@ -28,5 +36,8 @@ def index
 
   def logout
   end
+<<<<<<< HEAD
 
+=======
+>>>>>>> 34884a3685569ee62069abef8170ffa2cc302b40
 end

@@ -1,0 +1,53 @@
+{
+  margin: 0px; 
+}
+
+html{
+  height: 100%;
+  width : 100%;
+}
+
+body{
+
+  width : 100%;
+  height: 100%;
+}
+
+#header{
+  background-color: red;
+  height: 5%;
+}
+
+.titlerogo{
+  background-color: blue;
+}
+
+#main{
+  background-color: blue;
+  height: 150%;
+}
+
+#main_head{
+  background-color: green;
+  height: 30%;
+  width : 100%; 
+}
+
+#main_sidebar{
+  background-color: white;
+  float : left;
+  height: 60%;
+  width : 10%;
+}
+
+#main_tlbar{
+  background-color: black;
+  margin-left : auto;
+  margin-right: auto;
+  width: 70%;
+  height: 70%;
+}
+
+#footer{
+  background-color: yellow;
+}

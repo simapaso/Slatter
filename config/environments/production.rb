@@ -2,7 +2,11 @@ Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
+<<<<<<< HEAD
   config.cache_classes = true
+=======
+  config.cache_classes = false
+>>>>>>> 34884a3685569ee62069abef8170ffa2cc302b40
 
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
